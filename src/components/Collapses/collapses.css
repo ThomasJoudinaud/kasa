@@ -1,0 +1,63 @@
+.collapse {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.collapse .collapse__title {
+  height: 4rem;
+  width: 100%;
+  background-color: #FF6060;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  display: flex;
+}
+.collapse .collapse__title .collapse__title__content {
+  margin: auto;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.collapse .collapse__title .collapse__title__content .collapse__arrow {
+  transition: transform 0.3s ease-in-out;
+}
+.collapse .collapse__title .collapse__title__content .collapse__arrow_rotation {
+  transform: rotate(180deg);
+}
+.collapse .animated__content {
+  height: 0px;
+  overflow: hidden;
+  transition: height ease 0.3s;
+}
+
+.collapse__content {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FF6060;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.6%;
+  width: 100%;
+  background-color: #F6F6F6;
+}
+.collapse__content .collapse__content__text {
+  text-align: left;
+  margin: 1.5rem;
+}
+.collapse__content .collapse__content__array {
+  width: 100%;
+  display: flex;
+  margin: 1.5rem;
+  text-align: left;
+  border-radius: 10px;
+}/*# sourceMappingURL=collapses.css.map */

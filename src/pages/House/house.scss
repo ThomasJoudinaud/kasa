@@ -1,0 +1,148 @@
+.house__page{
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    @media(max-width: 720px){
+        width: 90%;
+    }
+    .house__page__carousel{
+        width: 100%;
+        height: 30rem;
+        @media(max-width: 850px){
+            height: 25rem;
+        }
+    }
+    .house__page__information{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 9rem;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+        width: 100%;
+        @media(max-width: 850px){
+            flex-direction: column;
+            height: auto;
+            align-items: flex-start;
+        }
+        .house__page__information__houseinfo{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @media(max-width: 850px){
+                width: 100%;
+            }
+            .house__page__information__title{
+            color: #FF6060;
+            font-family: Montserrat;
+            font-size: 2.25rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 142.6%;
+            text-align: left;
+            @media(max-width: 850px){
+                margin-bottom: 1rem;
+                font-size: 2rem;
+            }
+            }
+            .house__page__information__houseinfo__location{
+                color: #FF6060;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 142.6%;
+            }
+            .house__page__information__houseinfo__tag{
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                .house__page__information__houseinfo__tag__object{
+                    border-radius: 14px;
+                    background: #FF6060;
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 142.6%;
+                    padding: 0.5rem;
+                    min-width: 7rem;
+                    margin-right: 0.5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    @media(max-width: 850px){
+                        max-height: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .house__page__information__hostinfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+        height: 100%;
+        @media(max-width: 850px){
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 1rem;
+        }
+        .house__page__information__hostinfo__name{
+            color: #FF6060;
+            text-align: right;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 142.6%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                margin-left: 1rem;
+            }
+        }
+        .house__page__information__hostinfo__rate{
+            display: flex;
+            justify-content: space-evenly;
+            color: #E3E3E3;
+            width: 100%;
+            font-size: 2.5rem;
+            @media(max-width: 850px){
+                font-size: 1.5rem;
+                width: 30%;
+            }
+            .rated{
+                color: #FF6060;
+            }
+        }
+    }
+    .house__page__colapse{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        @media(max-width: 850px){
+            flex-direction: column;
+        }
+        .house__page__colapse__object{
+            width: 46%;
+            height: 100%;
+            margin-top: 2rem;
+            @media(max-width: 850px){
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.about{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
+    @media(max-width: 720px){
+        width: 90%;
+    }
+    .about__header{
+        margin-top: 2.8rem;
+        background-image: url(../../assets/moutain_img.png);
+        background-size: 100% auto;
+        background-position: 50% 55%;
+        border-radius: 25px;
+        height: 225px;
+        width: 100%;
+    }
+    .about__Collapse{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        .collapse__Object{
+            margin-top: 3.8rem;
+        }
+    }
+}
