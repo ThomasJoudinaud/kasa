@@ -48,5 +48,3 @@ function Collapses({title, content}){
 }
 
 export default Collapses
-
-//             {open && <div className={`collapse__content ${open ? 'open' : ''}`}>

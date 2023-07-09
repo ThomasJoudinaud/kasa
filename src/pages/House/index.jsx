@@ -62,5 +62,3 @@ const House = () => {
 
 
 export default House;
-
-//	<img key={index} src={ratingValue <= rating ? redStar : greyStar} alt="star" />

@@ -27,6 +27,22 @@ function Gallery(props) {
         }
     }
 
+    const SingleCover = () => {
+        if(imageArray.length > 1) {
+                return <div className="colapse__ifSinglePicture">
+                <div className="colapse__btn__next" onClick={nextImg}>
+                    <img src={arrow} alt="flèche suivant" />
+                </div>
+                <div className="colapse__btn__prev" onClick={prevImg}>
+                    <img src={arrow} alt="flèche avant" />
+                </div>
+                <div className="colapse__info__index">
+                    {`${activeIndex + 1}/${imageArray.length}`}
+                </div>
+            </div>
+        }
+    }
+
     return(
         <div className="colapse__block">
             <div className="colapse__block__img">
@@ -34,14 +50,8 @@ function Gallery(props) {
                     return <img key={pics} src={pics} alt={pics} className={imgShow(index)}/>
                 })}
             </div>
-            <div className="colapse__btn__next" onClick={nextImg}>
-                <img src={arrow} alt="flèche suivant" />
-            </div>
-            <div className="colapse__btn__prev" onClick={prevImg}>
-                <img src={arrow} alt="flèche avant" />
-            </div>
-            <div className="colapse__info__index">
-                {`${activeIndex + 1}/${imageArray.length}`}
+            <div>
+                <SingleCover />
             </div>
         </div>
     )
