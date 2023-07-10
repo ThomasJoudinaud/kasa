@@ -1,10 +1,15 @@
 import { useState } from "react"
 import arrow from "../../assets/Vector.png"
 import "./gallery.css"
+import placeholder from "../../assets/moutain_img.png"
 
 function Gallery(props) {
     const imageArray = props.PictureArray
     const [activeIndex, setActiveIndex] = useState(0)
+
+    if (imageArray.length === 0) {
+        imageArray.push(placeholder)
+    }
 
     const imgShow = (index) => {
         if(index === activeIndex) {
@@ -46,9 +51,9 @@ function Gallery(props) {
     return(
         <div className="colapse__block">
             <div className="colapse__block__img">
-                {imageArray.map((pics, index) => {
+                {(imageArray.map((pics, index) => {
                     return <img key={pics} src={pics} alt={pics} className={imgShow(index)}/>
-                })}
+                }))}
             </div>
             <div>
                 <SingleCover />
